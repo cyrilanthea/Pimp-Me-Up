@@ -1,65 +1,6 @@
-.newsletter{
-  font-family:'Lucida Sans', sans-serif;
-  background: black;
-  color: white;
-  padding: 1rem 2rem;
-}
-
-.newsletter .row{
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  align-items: center;
-}
-
-.newsletter .row .col h2{
-  margin-bottom: 1.5rem;
-}
-
-.newsletter .row .col p{
-  font-size: 12px;
-  margin-bottom: 1.5rem;
-  width: 70%;
-}
-
-.btn-1{
-    text-decoration: none;
-  background-color: white;
-  color: black;
-  display: inline-block;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-}
-
-.newsletter form div{
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.newsletter form input{
-  justify-content: center;
-  text-indent: 2rem;
-  width:100%;
-  border-radius: 1rem;
-  padding: 1.5rem 0;
-  outline: none;
-  border: none;
-}
-
-.newsletter form a{
-  text-decoration: none;
-  position: absolute;
-  top: 2.6rem;
-  right:-0.5rem;
-  background-color: black;
-  color: white;
-  margin: 1rem;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-}
 
 .footer {
-  font-family:'Lucida Sans', sans-serif;
+  font-family:'Lucida Sans', sans-serif; /*le font family a été enlever dans version de kaenat*/
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
@@ -103,7 +44,6 @@
 
 .footer__nav {
   display: flex;
-/*	flex-flow: row wrap;*/
 }
 
 .footer__nav > * {
@@ -114,7 +54,6 @@
 .nav__ul a {
   color: #999;
 }
-
 
 .copyright {
   font-family:'Lucida Sans', sans-serif;

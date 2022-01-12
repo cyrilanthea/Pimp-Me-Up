@@ -66,7 +66,7 @@ body{
   align-items: center;
 
 }
-
+/*
 .search {
     position:absolute;
     top: 0px;
@@ -102,10 +102,7 @@ body{
     transition: 0.5s;
 }
 
-.searchBtn img{
-  height: 15px;
-  width:15px;
-}
+
 .searchInput {
     border:none;
     background: none;
@@ -118,7 +115,7 @@ body{
     line-height: 40px;
     width: 0px;
 
-}
+}*/
 
 .nav-menu-items{
   /*overflow: hidden;*/
@@ -144,7 +141,6 @@ body{
 .menu-containers{
   top: auto;
   display:flex;
-  /*flex-grow:1 ;*/
   justify-content: center;
   background-color: white;
   width: 100%;
@@ -156,7 +152,6 @@ body{
 
 .menu-containers> li {
   margin: 0 ;
-  /*padding-top: 4px;*/
 }
 
 
@@ -251,24 +246,10 @@ body{
   margin-left: 35px;
   font-size: 12px;
   color: #fff;
-  background-color: #a30042;
+  background-color:#dc143c ;
 }
 
 
-
-
-/*.menu-container:nth-child(3) {
-  margin-top: 200px; }
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-*/
-/* double   .menu-containers{
-  display: flex;
-  justify-content: center; }
-*/
 .menu {
   padding: 0 10px;
   margin: 0 5px;
@@ -283,18 +264,6 @@ nav {
   z-index: 100;*/
 }
 
-/*.menu{
-
-  text-transform: capitalize;
-  font-family:'Lucida Sans', sans-serif;
-  padding: 0 10px;
-  margin: 0 5px;
-  text-decoration: none;
-  color: black;
-  opacity: 0.5;
-  transition: .5s;
-  font-size: 18px;
-}*/
 
 .menu:hover {
   cursor: pointer;
