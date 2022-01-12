@@ -20,8 +20,8 @@ const createNav = () => {
    <div class ="nav-menu-items"  style="width:100%">
     <div class ="nav-menu-items-center">
      <ul class="menu-containers">
-            <li class="menu menu1"> <a href=# class="category">Boutique</a></li>
-            <li class="menu dropdown1"> <a href=# class="category">Vêtements</a>
+            <li class="menu menu1"> <a href="../html/index.html" class="category">Boutique</a></li>
+            <li class="menu dropdown1"> <a href="#" class="category">Vêtements</a>
                 <ul class="dropdown">
                   <li class="dropdown-sub-menu1"> <a href="#">Robes</a></li>
                   <li class="dropdown-sub-menu2"> <a href="#">Jupes</a></li>
