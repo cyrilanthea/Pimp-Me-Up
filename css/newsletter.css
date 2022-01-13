@@ -23,7 +23,6 @@
 
 
 .btn-1{
-  text-decoration: none;
   background-color: white;
   color: black;
   display: inline-block;
@@ -59,6 +58,12 @@
   border-radius: 1rem;
 }
 
+.send:hover{
+	background-color: #dc143c;
+  transition: all 0.4s;
+  color: white;
+}
+
 /* newly added*/
 .response-success{
   color: #4caf50;
@@ -68,6 +73,7 @@
   color: #f44336;
 }
 .modal-newsletter {
+  font-family:'Lucida Sans', sans-serif;
 	color: #999;
 	width: 625px;
 	max-width: 625px;
