@@ -120,6 +120,7 @@ body{
 .nav-menu-items{
   /*overflow: hidden;*/
   left:0;
+  padding-bottom: 4px;
   position:absolute;
   top:2px;
 }
