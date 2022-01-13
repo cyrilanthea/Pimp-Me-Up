@@ -24,6 +24,7 @@
 
 
 .nav__title {
+  padding-top: 15px;
   justify-content: center;
   align-items: center;
   font-size: 18px;
@@ -64,6 +65,10 @@
   background-color: black;
 }
 
+.nav__ul span img{
+  height: 50px;
+  width: 110px;
+}
 
 @media screen and (min-width: 40.375em) {
   .footer__nav > * {

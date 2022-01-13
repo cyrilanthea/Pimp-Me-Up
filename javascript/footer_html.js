@@ -36,7 +36,16 @@ const createFooter = () => {
             <span> <i class="bx bxl-instagram-alt bx-md"></i> </span>
             <span> <i class="bx bxl-twitter bx-md"></i> </span>
             <span> <i class="bx bxl-pinterest bx-md"></i> </span>
-          </div>
+        </div>
+
+
+        <div class="nav__ul">
+            <h4 class="nav__title">Télécharger notre application</h4>
+            <span> <img src="../img/apple_store_app_link.svg" alt="download_link"> </span>
+            <span> <img src="../img/google_store_app_link.png" alt="download_link"></span>
+
+        </div>
+
      </li>
   </ul>
 `;
