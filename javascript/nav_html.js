@@ -10,6 +10,12 @@ const createNav = () => {
       <h1 class="brand-title"> Pimp Me Up</h1>
     </a>
     <div class="nav-items">
+      <div class="search-container">
+        <form class="searchBox" action="/action_page.php">
+          <input type="text" placeholder="Rechercher" name="search">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+      </div>
         <!--div class="search">
           <input  type="text" class="searchInput" name="find" placeholder="search product">
           <button type="submit" class="searchBtn">

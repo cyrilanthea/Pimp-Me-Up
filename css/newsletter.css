@@ -24,6 +24,7 @@
 
 .btn-1{
   background-color: white;
+  border:1px solid black;
   color: black;
   display: inline-block;
   border-radius: 1rem;
@@ -48,6 +49,7 @@
 /*il y a un css pour .newsletter form button mais dans index html il y a pas de button envoyer c'est un input*/
 .send {
   text-decoration: none;
+  border:1px solid white;
   position: absolute;
   top: 3.28rem;
   right:-0.5rem;

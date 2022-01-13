@@ -66,6 +66,44 @@ body{
   align-items: center;
 
 }
+
+
+.search-container {
+  position:absolute;
+  top: 3em;
+  right: 2%;
+
+}
+
+.search-container input[type=text] {
+  font-family:'Lucida Sans', sans-serif;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius: 0.5rem;
+  justify-content: center;
+  text-indent: 0.3rem;
+  width:100%;
+  outline: none;
+  border: none;
+}
+
+.search-container button {
+  text-decoration: none;
+  top: .6rem;
+  position: absolute;
+  right:0.1rem;
+  border:1px solid white;
+  background: black;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+
+.search-container button:hover {
+  background-color:  #dc143c;
+}
+
 /*
 .search {
     position:absolute;
@@ -241,7 +279,7 @@ body{
   padding-right: 6px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  border-radius: 100%;
+  border-radius: 75%;
   vertical-align:text-top;
   margin-left: 35px;
   font-size: 12px;
