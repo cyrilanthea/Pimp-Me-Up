@@ -13,7 +13,7 @@ const createNav = () => {
       <div class="search-container">
         <form class="searchBox" action="/action_page.php">
           <input type="text" placeholder="Rechercher" name="search">
-          <button type="submit"><i class="bx bx-search"></i></button>
+          <button class="searchBtn" type="submit"><i class="bx bx-search"></i></button>
         </form>
       </div>
         <!--div class="search">

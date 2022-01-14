@@ -88,8 +88,7 @@ body{
   border: none;
 }
 
-.search-container button {
-  text-decoration: none;
+.search-container .searchBtn {
   top: .6rem;
   position: absolute;
   right:0.1rem;
@@ -97,12 +96,15 @@ body{
   background: black;
   color: white;
   padding: 5px 9px;
-  border-radius: 5px;
+  border-radius:  0.5rem;
 }
 
-.search-container button:hover {
-  background-color:  #dc143c;
-}
+
+/*.search-container i{
+
+}*/
+
+
 
 /*
 .search {

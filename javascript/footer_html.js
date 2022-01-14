@@ -26,7 +26,7 @@ const createFooter = () => {
         <ul class="nav__ul">
           <li><a href="#">Proposer vos services</a></li>
           <li><a href="#">Nos engagements</a></li>
-          <li><a href="#">A Propos de Nous</a></li>
+          <li><a href="../html/nous.html">A Propos de Nous</a></li>
         </ul>
     </li>
      <li class="nav__item">
