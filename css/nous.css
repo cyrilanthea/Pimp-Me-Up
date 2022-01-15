@@ -16,6 +16,7 @@ body{
 }
 section{
     display: grid;
+    padding-top: 7em;
     grid-template-columns: 1fr 1fr;
     min-height: 70vh;
     width: 75vw;
@@ -26,14 +27,16 @@ section{
 .image{
     /*background-color:black;*/
     background-image: url("../img/about_us_photo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    background-repeat: no-repeat;
+    background-size: 950px;
     border-radius: 12px 0 0 12px;
 }
+
 .image img{
-  height:30vh;
-  margin:50px auto
+  height:20vh;
+
+  margin:50px auto;
 }
 .content{
     background-color: white;
