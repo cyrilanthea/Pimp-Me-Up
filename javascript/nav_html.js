@@ -3,15 +3,21 @@ const createNav = () => {
 
   nav.innerHTML = `
   <div class="nav">
-    <a href="index.html" class="navbar-brand">
-      <img src="../img/black_logo.png" class="brand-logo" alt="logo">
-    </a>
-    <a class="navbar-title" href="index.html">
-      <h1 class="brand-title"> Pimp Me Up</h1>
-    </a>
+    <div class="navbar-brand">
+      <a href="../html/index.html">
+        <img src="../img/black_logo.png" class="brand-logo" alt="logo"/>
+      </a>
+    </div>
+
+    <div class="navbar-title">
+      <h1 class="brand-title">
+        <a href="../html/index.html">Pimp Me Up</a>
+      </h1>
+    </div>
+
     <div class="nav-items">
       <div class="search-container">
-        <form class="searchBox" action="/action_page.php">
+        <form class="searchBox" action="">
           <input type="text" placeholder="Rechercher" name="search">
           <button class="searchBtn" type="submit"><i class="bx bx-search"></i></button>
         </form>
@@ -56,7 +62,7 @@ const createNav = () => {
               <img src="../img/user.png" alt="user"></a>
             </li>
             <li class="menu menu4">
-             <a href="panier.html"> <img src="../img/cart.png" alt="panier"></a> <!-- cart page path modification-->
+             <a href="../html/panier.html"> <img src="../img/cart.png" alt="panier"></a> <!-- cart page path modification-->
              <span class="nb-cart-items">0</span>
            </li>
            <li class="menu menu5">
@@ -71,26 +77,3 @@ const createNav = () => {
 }
 
 createNav();
-
-
-
-/*function rating(params) {
-  var today = new Date(params.created_at);
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
-
-today = dd + '/' + mm+ '/' + yyyy;
-  const comment = document.querySelector('.comment-section');
-  comment.innerHTML=`<div class="d-flex justify-content-between align-items-center">
-  <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle profile-image">
-      <div class="d-flex flex-column ml-1 comment-profile">
-          <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="username">Lori Benneth</span>
-          <p>${params.comment}</p>
-      </div>
-  </div>
-  <div class="date"> <span class="text-muted">${today}</span> </div>
-</div>
-<hr>
-`
-}  what do we use it for? */
