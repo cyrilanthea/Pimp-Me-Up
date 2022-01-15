@@ -90,7 +90,7 @@
       <input type="password" name="password_retype" placeholder="Entrer à nouveau votre Mot de passe" required="required" autocomplete="off">
 
       <label>
-        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions utilisation et les reglements de Pimp Me Up.<br>
+        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions d'utilisation et les reglements de Pimp Me Up.<br>
       </label><br>
 
       <button type="submit">Valider</button>

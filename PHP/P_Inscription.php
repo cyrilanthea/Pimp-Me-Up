@@ -74,7 +74,7 @@
   <form class="modal-content animate" action="P_inscription_traitement.php" method="post">
     <div class="imgcontainer">
         <h1>Inscrivez-Vous</h1>
-        <img src="../img/Avatar.jpeg" alt="Avatar" class="avatar">
+        <img src="../img/Avatar.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container" >
@@ -94,10 +94,10 @@
       <input type="password" name="password_retype" placeholder="Entrer à nouveau votre Mot de passe" required="required" autocomplete="off">
 
       <label for="candidature"><b>Pourquoi voulez-vous candidater?</b></label>
-      <textarea type="text" name="candidature" placeholder="Je souhaite postuler à cette offre, car..." cols="43" rows="10" required></textarea>
+      <textarea type="text" name="candidature" placeholder=" Je souhaite postuler à cette offre, car..." cols="43" rows="10" required></textarea>
 
       <label>
-        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions utilisation et les reglements de Pimp Me Up.</br><br>
+        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions d'utilisation et les reglements de Pimp Me Up.</br><br>
       </label>
 
       <button type="submit">Valider</button>

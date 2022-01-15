@@ -1,5 +1,6 @@
 /* Bordered form */
 body {
+  font-family:'Lucida Sans', sans-serif;
   background: url('../img/Bijoux.jpg');
   height:100vh;
   background-position:center;
@@ -44,6 +45,10 @@ form {
     text-align: center;
     margin: 24px 0 12px 0;
   }
+
+.imgcontainer h1{
+  font-size: 23px;
+}
 
   /* Add padding to containers */
   .container {
@@ -135,4 +140,3 @@ form {
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
-  

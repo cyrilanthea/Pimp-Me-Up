@@ -1,5 +1,6 @@
 /* Bordered form */
 body {
+  font-family:'Lucida Sans', sans-serif;
   background: url('../img/Bijoux.jpg');
   height:100vh;
   background-position:center;
@@ -56,10 +57,15 @@ button:hover {
   margin: 24px 0 12px 0;
 }
 
+.imgcontainer h1{
+  font-size: 30px;
+}
+
 /* Add padding to containers */
 .container {
   padding: 16px;
 }
+
 
 /* The "Forgot password" text */
 span.psw {

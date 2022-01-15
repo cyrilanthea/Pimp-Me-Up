@@ -49,7 +49,7 @@
     <div class="imgcontainer">
         <h1>Connectez-Vous</h1>
 
-       <img src="../img/Avatar.jpeg" alt="Avatar" class="avatar">
+       <img src="../img/Avatar.jpg" alt="Avatar" class="avatar">
     </div>
     <div class="container">
       <label for="email"><b>Adresse e-mail</b></label>
