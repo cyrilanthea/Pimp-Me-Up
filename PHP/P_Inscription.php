@@ -5,6 +5,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="../CSS/Form.css">
             <title>Inscription</title>
+            <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
         </head>
         <body>
             <?php
@@ -60,12 +61,10 @@
                                 <strong>Erreur:</strong> mot de passe différent
                             </div>
                         <?php
-                        break;
-
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur:</strong> compte déjà existant
+                                <strong>Erreur:</strong> compte déja existant
                             </div>
                         <?php
 
@@ -99,7 +98,7 @@
       <textarea type="text" name="candidature" placeholder="Je souhaite postuler à cette offre, car..." cols="43" rows="10" required></textarea>
 
       <label>
-        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions utilisation et les reglements de Pimp Me Up.</br><br>
+        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions d'utilisation et les reglements de Pimp Me Up.</br><br>
       </label>
 
       <button type="submit">Valider</button>

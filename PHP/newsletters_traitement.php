@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
    <head>
-      <title>Pimp Me Up </title>
+      <title>Newsletter </title>
+      <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,14 +48,15 @@
                             'email' => $email
                         ));
 
-                     echo "<p>Merci d'avoir inscrit à notre newsletters, votre mail a bien été envoyé !<p>";
-                        
-                    }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail n'est pas de la bonne forme !</p>"; }
-                }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail est trop long !</p>"; }
-            }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail existe déjà !</p>"; }
+                        echo "<p>Merci d'avoir inscrit à notre newsletters, votre mail a bien été envoyé !<p>";
+
+                      }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail n'est pas de la bonne forme !</p>"; }
+                  }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail est trop long !</p>"; }
+              }else{ echo"<p>Je suis dans le regret de vous annoncer que l'inscription de la newsletters n'a pas pu être valider pour la raison : Le mail existe déjà !</p>"; }
     }
 
-?> <br><a class="retour" href="../html/index.html">Retour</a></div>
+?>
+<br><a class="retour" href="../html/index.html">Retour</a></div>
     </body>
 
 
@@ -63,7 +65,7 @@
       <div class="copyright">
          <p><i class='bx bx-registered'></i>2022 Pimp Me Up.</p>
       </div>
-   
+
 <style>
     .col-2 {
     background-color: black;
@@ -75,5 +77,4 @@
     color :white;
   }
 </style>
-
 </html>

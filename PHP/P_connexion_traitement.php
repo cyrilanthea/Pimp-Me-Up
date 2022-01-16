@@ -23,16 +23,16 @@
             // Si le mail est bon niveau format
             if(filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                // Verifie si le mdp est bon
-                if(password_verify($password, $data['password']))
+              // Verifie si le mdp est bon
+             if(password_verify($password, $data['password']))
                 {
 
-                    $_SESSION['user'] = $data['token'];
-                    header('Location: P_Chargement.php');
+                   $_SESSION['user'] = $data['token'];
+                   header('Location: P_Chargement.php');
 
                     die();
-                    // Message d'erreur
+                     // Message d'erreur
                 }else{ header('Location: P_Connexion.php?login_err=password'); die(); }
             }else{ header('Location: P_Connexion.php?login_err=email'); die(); }
         }else{ header('Location: P_Connexion.php?login_err=already'); die(); }
-    }else{ header('Location: P_Connexion.php'); die();}
+    }else{ header('Location: P_Connexion.php'); die();} 

@@ -23,7 +23,7 @@
 
        // Si row est égal à 0 ça veut dire que le compte il existe pas
         if($row == 0){
-            if(strlen($nom) <= 30){ // On verifie que la longueur du pseudo <= 100
+          if(strlen($nom) <= 30){ // On verifie que la longueur du pseudo <= 100
                 if(strlen($prenom) <= 30){
                     if(strlen($email) <= 20){ // On verifie que la longueur du mail <= 100
                         if(filter_var($email, FILTER_VALIDATE_EMAIL)){ // Si l'email est de la bonne forme
@@ -32,6 +32,7 @@
                                     // On hash le mot de passe avec Bcrypt, via un coût de 12
                                     $cost = ['cost' => 12];
                                     $password = password_hash($password, PASSWORD_BCRYPT, $cost);
+
 
 
                                     // On insère dans la base de données
