@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS client, prestataire;
+DROP TABLE IF EXISTS client, prestataire, newsletters;
 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -10,11 +10,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `client` (
   `id` int(11) NOT NULL,
-  `pseudo` varchar(100) NOT NULL,
+  `utilisateur` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` text NOT NULL,
-  `ip` varchar(20) NOT NULL,
-  `date_inscription` datetime NOT NULL DEFAULT current_timestamp()
+  `password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Structure de la table `prestataire`
@@ -25,14 +23,31 @@ CREATE TABLE `prestataire` (
   `nom` varchar(100) NOT NULL,
   `prenom` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `date_naissance` date NOT NULL,
-  `telephone` int(11) NOT NULL,
+  `password` text NOT NULL,
   `candidature` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Structure de la table `newsletters`
+
+CREATE TABLE `newsletters` (
+  `id` int(11) DEFAULT NULL,
+  `email` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 -- Index pour la table `client`
 
 ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+-- Index pour la table `newsletters`
+
+ALTER TABLE `newsletters`
+  ADD PRIMARY KEY (`id`);
+
+-- Index pour la table `prestataire`
+
+ALTER TABLE `prestataire`
   ADD PRIMARY KEY (`id`);
 
 
@@ -40,4 +55,16 @@ ALTER TABLE `client`
 
 ALTER TABLE `client`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
+-- AUTO_INCREMENT pour la table `newsletters`
+
+ALTER TABLE `newsletters`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+-- AUTO_INCREMENT pour la table `prestataire`
+
+ALTER TABLE `prestataire`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;

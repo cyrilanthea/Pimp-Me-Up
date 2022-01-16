@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mot de Passe oublié</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../css/Formulaire.css">
+</head>
+<body>
 <link rel="stylesheet" type="text/css" href="../css/Formulaire.css">
 
   <!-- Modal Content -->
@@ -14,3 +25,6 @@
     </div>
   </form>
 </div>
+</div>
+</body>
+</html>

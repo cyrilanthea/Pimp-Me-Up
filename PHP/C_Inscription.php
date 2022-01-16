@@ -18,7 +18,7 @@
                         case 'success':
                         ?>
                             <div class="alert alert-success">
-                                <strong>Succès</strong> inscription réussie !
+                                <strong>Succès:</strong> inscription réussie !
                             </div>
                         <?php
                         break;
@@ -26,37 +26,37 @@
                         case 'password':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe différent
+                                <strong>Erreur:</strong> mot de passe différent
                             </div>
                         <?php
                         break;
 
-                        case 'mail':
+                        case 'email':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email non valide
+                                <strong>Erreur:</strong> email non valide
                             </div>
                         <?php
                         break;
 
-                        case 'mail_length':
+                        case 'email_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email trop long
+                                <strong>Erreur:</strong> email trop long
                             </div>
                         <?php
                         break;
 
-                        case 'pseudo_length':
+                        case 'utilisateur_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> pseudo trop long
+                                <strong>Erreur:</strong> pseudo trop long
                             </div>
                         <?php
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte deja existant
+                                <strong>Erreur:</strong> compte deja existant
                             </div>
                         <?php
 
