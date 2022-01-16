@@ -1,7 +1,4 @@
-
-
 .newsletter{
-  margin-top: 4rem;
   font-family:'Lucida Sans', sans-serif;
   background: black;
   color: white;
@@ -159,4 +156,24 @@
 .hint-text {
 	margin: 100px auto;
 	text-align: center;
+}
+
+.col-2 {
+  background-color: black;
+  margin: 45px auto; /* 15% from the top and centered */
+  padding: 0 15px;
+  border: 1px solid #888;
+  width: 380px; /* Could be more or less, depending on screen size */
+  height: 300px;
+  color :white;
+}
+
+.retour:hover {
+	color : #ffc107;
+}
+.retour {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
 }
