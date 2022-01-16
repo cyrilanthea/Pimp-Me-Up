@@ -4,7 +4,6 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Connexion</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" href="../css/Formulaire.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +19,7 @@
                         case 'password':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe incorrect
+                                <strong>Erreur:</strong> mot de passe incorrect
                             </div>
                         <?php
                         break;
@@ -28,7 +27,7 @@
                         case 'email':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email incorrect
+                                <strong>Erreur:</strong> email incorrect
                             </div>
                         <?php
                         break;
@@ -36,7 +35,7 @@
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte non existant
+                                <strong>Erreur:</strong> compte non existant
                             </div>
                         <?php
                         break;

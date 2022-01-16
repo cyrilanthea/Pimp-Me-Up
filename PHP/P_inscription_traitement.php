@@ -23,16 +23,15 @@
 
        // Si row est égal à 0 ça veut dire que le compte il existe pas
         if($row == 0){
-            if(strlen($nom) <= 100){ // On verifie que la longueur du pseudo <= 100
-                if(strlen($prenom) <= 100){
-                    if(strlen($email) <= 100){ // On verifie que la longueur du mail <= 100
+            if(strlen($nom) <= 30){ // On verifie que la longueur du pseudo <= 100
+                if(strlen($prenom) <= 30){
+                    if(strlen($email) <= 20){ // On verifie que la longueur du mail <= 100
                         if(filter_var($email, FILTER_VALIDATE_EMAIL)){ // Si l'email est de la bonne forme
                             if($password === $password_retype){ // si les deux mdp saisis sont bon
 
                                     // On hash le mot de passe avec Bcrypt, via un coût de 12
                                     $cost = ['cost' => 12];
                                     $password = password_hash($password, PASSWORD_BCRYPT, $cost);
-
 
 
                                     // On insère dans la base de données
@@ -56,5 +55,3 @@
             }else{ header('Location: P_Inscription.php?reg_err=nom_length'); die();}
         }else{ header('Location: P_Inscription.php?reg_err=already'); die();}
     }
-
-    // on transforme toute les lettres majuscule en minuscule pour éviter que Foo@gmail.com et foo@gmail.com soient deux compte différents ..

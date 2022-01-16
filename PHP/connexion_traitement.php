@@ -10,7 +10,7 @@
 
 
         // On regarde si l'utilisateur est inscrit dans la table client
-        $check = $bdd->prepare('SELECT * FROM client WHERE email = ?');
+        $check = $bdd->prepare('SELECT utilisateur, email, password FROM client WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -18,17 +18,15 @@
 
 
         // Si > à 0 alors client existe
-        if($row == 1)
+        if($row > 0)
         {
             // Si le mail est bon niveau format
             if(filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                $password =hash('sha256', $password);
-                if($data['password'] === $password)
+                if(password_verify($password, $data['password']))
                 {
 
-                    $_SESSION['user'] = $data['email'];
-                    header('Location: landing.php');
+                    header('Location: C_Chargement.php');
 
                     die();
                 }else{ header('Location: C_Connexion.php?login_err=password'); die(); }

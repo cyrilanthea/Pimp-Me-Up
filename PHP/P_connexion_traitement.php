@@ -23,15 +23,16 @@
             // Si le mail est bon niveau format
             if(filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                $password =hash('sha256', $password);
-                if($data['password'] === $password)
+                // Verifie si le mdp est bon
+                if(password_verify($password, $data['password']))
                 {
 
-                    $_SESSION['user'] = $data['email'];
-                    header('Location: landing.php');
+                    $_SESSION['user'] = $data['token'];
+                    header('Location: P_Chargement.php');
 
                     die();
+                    // Message d'erreur
                 }else{ header('Location: P_Connexion.php?login_err=password'); die(); }
             }else{ header('Location: P_Connexion.php?login_err=email'); die(); }
         }else{ header('Location: P_Connexion.php?login_err=already'); die(); }
-    }else{ header('Location: P_Connexion.php'); die();} // si le formulaire est envoyé sans aucune données
+    }else{ header('Location: P_Connexion.php'); die();}

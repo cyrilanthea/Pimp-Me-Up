@@ -5,7 +5,6 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="../CSS/Form.css">
             <title>Inscription</title>
-            <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
         </head>
         <body>
             <?php
@@ -18,53 +17,55 @@
                         case 'success':
                         ?>
                             <div class="alert alert-success">
-                                <strong>Succès</strong> inscription réussie !
+                                <strong>Succès:</strong> inscription réussie !
                             </div>
                         <?php
                         break;
 
-                        case 'nom':
+                        case 'nom_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe différent
+                                <strong>Erreur:</strong> nom trop long
                             </div>
                         <?php
                         break;
 
-                        case 'prenom':
+                        case 'prenom_length':
                             ?>
                                 <div class="alert alert-danger">
-                                    <strong>Erreur</strong> mot de passe différent
+                                    <strong>Erreur:</strong> prénom trop long
                                 </div>
                             <?php
                             break;
 
-                        case 'mail':
+                        case 'email':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email non valide
+                                <strong>Erreur:</strong> email non valide
                             </div>
                         <?php
                         break;
 
-                        case 'mail_length':
+                        case 'email_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email trop long
+                                <strong>Erreur:</strong> email trop long
                             </div>
                         <?php
                         break;
 
-                        case 'telephone':
+                        case 'password':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> numero de telephone incorrect
+                                <strong>Erreur:</strong> mot de passe différent
                             </div>
                         <?php
+                        break;
+
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte deja existant
+                                <strong>Erreur:</strong> compte déjà existant
                             </div>
                         <?php
 
@@ -80,10 +81,10 @@
 
     <div class="container" >
     <label for="nom"><b>Nom</b></label>
-      <input type="text" name="nom" placeholder="Entrer votre nom Utilisateur" required="required" autocomplete="off">
+      <input type="text" name="nom" placeholder="Entrer votre Nom" required="required" autocomplete="off">
 
       <label for="prenom"><b>Prenom</b></label>
-      <input type="text" name="prenom" placeholder="Entrer votre nom Utilisateur" required="required" autocomplete="off">
+      <input type="text" name="prenom" placeholder="Entrer votre Prénom" required="required" autocomplete="off">
 
       <label for="email"><b>Adresse e-mail</b></label>
       <input type="email" name="email" placeholder="Entrer votre Adresse e-mail" required="required" autocomplete="off">
@@ -95,10 +96,10 @@
       <input type="password" name="password_retype" placeholder="Entrer à nouveau votre Mot de passe" required="required" autocomplete="off">
 
       <label for="candidature"><b>Pourquoi voulez-vous candidater?</b></label>
-      <textarea type="text" name="candidature" placeholder=" Je souhaite postuler à cette offre, car..." cols="43" rows="10" required></textarea>
+      <textarea type="text" name="candidature" placeholder="Je souhaite postuler à cette offre, car..." cols="43" rows="10" required></textarea>
 
       <label>
-        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions d'utilisation et les reglements de Pimp Me Up.</br><br>
+        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions utilisation et les reglements de Pimp Me Up.</br><br>
       </label>
 
       <button type="submit">Valider</button>

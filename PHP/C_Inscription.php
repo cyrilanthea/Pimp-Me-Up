@@ -1,14 +1,13 @@
 <!DOCTYPE html>
     <html lang="fr">
         <head>
-            <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
             <meta charset="UTF-8">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" type="text/css" href="../css/Form.css">
+            <link rel="stylesheet" type="text/css" href="../CSS/Form.css">
             <title>Inscription</title>
         </head>
         <body>
-            <?php
+            <?php 
                 if(isset($_GET['reg_err']))
                 {
                     $err = htmlspecialchars($_GET['reg_err']);
@@ -18,7 +17,7 @@
                         case 'success':
                         ?>
                             <div class="alert alert-success">
-                                <strong>Succès</strong> inscription réussie !
+                                <strong>Succès:</strong> inscription réussie !
                             </div>
                         <?php
                         break;
@@ -26,39 +25,39 @@
                         case 'password':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe différent
+                                <strong>Erreur:</strong> mot de passe différent
                             </div>
                         <?php
                         break;
 
-                        case 'mail':
+                        case 'email':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email non valide
+                                <strong>Erreur:</strong> email non valide
                             </div>
                         <?php
                         break;
 
-                        case 'mail_length':
+                        case 'email_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email trop long
+                                <strong>Erreur:</strong> email trop long
                             </div>
-                        <?php
+                        <?php 
                         break;
 
-                        case 'pseudo_length':
+                        case 'utilisateur_length':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> pseudo trop long
+                                <strong>Erreur:</strong> pseudo trop long
                             </div>
-                        <?php
+                        <?php 
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte deja existant
+                                <strong>Erreur:</strong> compte déjà existant
                             </div>
-                        <?php
+                        <?php 
 
                     }
                 }
@@ -74,7 +73,6 @@
 
          <p>...</p>
          <p>Ou avec votre compte</p>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
     </div>
 
     <div class="container">
@@ -91,11 +89,11 @@
       <input type="password" name="password_retype" placeholder="Entrer à nouveau votre Mot de passe" required="required" autocomplete="off">
 
       <label>
-        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions d'utilisation et les reglements de Pimp Me Up.<br>
+        <input type="checkbox" id="checkbox" name="remember" required>Si vous cochez ceci, vous acceptez les Conditions utilisation et les reglements de Pimp Me Up.<br>
       </label><br>
-
+      
       <button type="submit">Valider</button>
-
+      
 
       <a href="C_Connexion.php">Vous avez déja un compte ?</a><br>
       <a href="../html/C_Choix.html">Retour</a>
