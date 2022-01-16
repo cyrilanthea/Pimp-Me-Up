@@ -8,6 +8,7 @@
   max-width: 3000px;
   position: relative;
   margin: auto;
+  margin-bottom: 10px;
   z-index: -1;
 
 }
@@ -54,7 +55,7 @@
 
 .slideshow-dot{
   position:relative;
-  top: -3em;
+  top: -5em;
 }
 
 .dot {
