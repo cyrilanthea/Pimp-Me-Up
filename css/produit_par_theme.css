@@ -1,6 +1,7 @@
 .product{
     position: relative;
     overflow: hidden;
+    padding-top: 20px;
     padding: 0px 30px;
 }
 

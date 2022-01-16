@@ -22,12 +22,6 @@ const createNav = () => {
           <button class="searchBtn" type="submit"><i class="bx bx-search"></i></button>
         </form>
       </div>
-        <!--div class="search">
-          <input  type="text" class="searchInput" name="find" placeholder="search product">
-          <button type="submit" class="searchBtn">
-              <i class='bx bx-search'></i>
-          </button>
-        </div-->
    </div>
    <div class ="nav-menu-items"  style="width:100%">
     <div class ="nav-menu-items-center">
