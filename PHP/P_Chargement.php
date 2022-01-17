@@ -2,13 +2,13 @@
 <html lang="fr">
    <head>
       <title>Pimp Me Up </title>
+      <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/index.css"><!--path change-->
-      <link rel="stylesheet" href="../css/newsletter.css"><!--path change-->
 
    </head>
    <body class="body">
@@ -16,10 +16,44 @@
          <nav class="navbar"> </nav>
          <script lang="javascript" src="../javascript/P_nav_chargement.js"></script><!--path change-->
       </header>
-    <!--Slideshow  -->
-    <div class="slider"></div>
-      <script lang="javascript" src="../javascript/slider_html.js"></script><!--path change-->
-      <script lang="javascript" src="../javascript/slider_functions.js"></script><!--path change-->
+
+      <!--Slideshow  -->
+
+      <div class="slider">
+        <script lang="javascript" src="../javascript/slider_html.js"></script><!--path change-->
+        <script lang="javascript" src="../javascript/slider_functions.js"></script><!--path change-->
+      </div>
+      <!--Produits  par theme -->
+      <div class="produit-par-theme">
+       <script lang="javascript" src="../javascript/produits_html.js"></script>
+      </div>
+      <!-- collections -->
+
+    <div class="collection-category">
+      <section class="collection-container">
+        <a href="#" class="collection">
+          <img src="../img/Bijoux.jpg" alt="">
+          <button class="collection-title">Acessoires</button>
+        </a>
+        <a href="#" class="collection">
+          <img src="../img/kimono.jpg" alt="">
+          <button class="collection-title">Vêtements</button>
+        </a>
+        <a href="#" class="collection">
+          <img src="../img/coiffure2.jpg" alt="">
+          <button class="collection-title">Coiffure</button>
+        </a>
+        <a href="#" class="collection">
+          <img src="../img/maquillage1.jpg" alt="">
+          <button class="collection-title">Maquillage</button>
+        </a>
+      </section>
+    </div>
+
+    <!--Services  par theme -->
+    <div class="service-par-theme">
+     <script lang="javascript" src="../javascript/services_html.js"></script>
+    </div>
 
       <!-- newsletter -->
 
@@ -33,11 +67,11 @@
                <button class="button btn-1">Parrainez</button>
             </div>
             <div class="col">
-               <form action="../PHP/newsletters_traitement.php" method="post"><!--path change-->
+               <form action="../PHP/newsletters_traitement.php"><!--path change-->
                   <div>
                      <h2> Recevez notre Newsletter </h2>
                      <input type="email" name="email" placeholder="Adresse e-mail">
-                     <button class="send">Envoyer</button>
+                     <button class="send"> Envoyer </button>
                   </div>
                </form>
             </div>
@@ -62,9 +96,8 @@
                         </span>
                      </div>
                      <div class="form-check-inline pt-3 col-md-12">
-                        <label class="form-check-label" for="flexCheckDefault" style="padding-left:16px"> 
-                        <input type="checkbox" name="" class="form-check-inpu" id="flexCheckDefault" required>
-                        En cliquant sur le bouton « S'INSCRIRE », vous confirmez que vous êtes âgé(e) d'au moins 18 ans et acceptez d'être lié(e) par les modalités suivantes :</label>
+                        <input type="checkbox" name="" class="form-check-inpu" checked id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="padding-left:16px"> En cliquant sur le bouton « S'INSCRIRE », vous confirmez que vous êtes âgé(e) d'au moins 18 ans et acceptez d'être lié(e) par les modalités suivantes :</label>
                      </div>
                   </div>
                </form>
