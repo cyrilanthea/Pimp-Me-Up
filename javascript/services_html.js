@@ -48,8 +48,8 @@ const createServiceCategorie = () => {
 
   <section class="product">
       <h2 class="product-category">Maquillage</h2>
-      <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
-      <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
+      <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
       <div class="product-container">
           <div class="product-card">
               <div class="product-image"> <span class="discount-tag">-50% promo</span> <a href="html/detail.html"><img src="img/maquillage2.jpg" class="product-thumb" alt=""></a> <button class="card-btn">Ajouter aux favoris <i class='bx bx-heart bx-tada'></i><button> </div>
