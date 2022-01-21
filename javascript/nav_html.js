@@ -11,7 +11,7 @@ const createNav = () => {
 
     <div class="navbar-title">
       <h1 class="brand-title">
-        <a href="html/index.html">Pimp Me Up</a>
+        <a href="index.html">Pimp Me Up</a>
       </h1>
     </div>
 
@@ -26,7 +26,7 @@ const createNav = () => {
    <div class ="nav-menu-items"  style="width:100%">
     <div class ="nav-menu-items-center">
      <ul class="menu-containers">
-            <li class="menu menu1"> <a href="html/index.html" class="category">Boutique</a></li>
+            <li class="menu menu1"> <a href="index.html" class="category">Boutique</a></li>
             <li class="menu dropdown1"> <a href="#" class="category">Vêtements</a>
                 <ul class="dropdown">
                   <li class="dropdown-sub-menu1"> <a href="#">Robes</a></li>
