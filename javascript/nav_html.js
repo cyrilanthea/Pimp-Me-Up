@@ -4,14 +4,14 @@ const createNav = () => {
   nav.innerHTML = `
   <div class="nav">
     <div class="navbar-brand">
-      <a href="../html/index.html">
-        <img src="../img/black_logo.png" class="brand-logo" alt="logo"/>
+      <a href="index.html">
+        <img src="img/black_logo.png" class="brand-logo" alt="logo"/>
       </a>
     </div>
 
     <div class="navbar-title">
       <h1 class="brand-title">
-        <a href="../html/index.html">Pimp Me Up</a>
+        <a href="html/index.html">Pimp Me Up</a>
       </h1>
     </div>
 
@@ -26,7 +26,7 @@ const createNav = () => {
    <div class ="nav-menu-items"  style="width:100%">
     <div class ="nav-menu-items-center">
      <ul class="menu-containers">
-            <li class="menu menu1"> <a href="../html/index.html" class="category">Boutique</a></li>
+            <li class="menu menu1"> <a href="html/index.html" class="category">Boutique</a></li>
             <li class="menu dropdown1"> <a href="#" class="category">Vêtements</a>
                 <ul class="dropdown">
                   <li class="dropdown-sub-menu1"> <a href="#">Robes</a></li>
@@ -52,15 +52,15 @@ const createNav = () => {
             </li>
 
             <li class="menu menu3">
-             <a href="../html/Choix.html"> <!-- user page path modification-->
-              <img src="../img/user.png" alt="user"></a>
+             <a href="html/Choix.html"> <!-- user page path modification-->
+              <img src="img/user.png" alt="user"></a>
             </li>
             <li class="menu menu4">
-             <a href="../html/panier.html"> <img src="../img/cart.png" alt="panier"></a> <!-- cart page path modification-->
+             <a href="html/panier.html"> <img src="img/cart.png" alt="panier"></a> <!-- cart page path modification-->
              <span class="nb-cart-items">0</span>
            </li>
            <li class="menu menu5">
-            <a href="#"> <img src="../img/calendar.png" alt="rdv"></a>
+            <a href="#"> <img src="img/calendar.png" alt="rdv"></a>
             <span class="nb-cart-items">0</span>
           </li>
         </ul>
