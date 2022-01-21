@@ -26,7 +26,7 @@ const createFooter = () => {
         <ul class="nav__ul">
           <li><a href="#">Proposer vos services</a></li>
           <li><a href="#">Nos engagements</a></li>
-          <li><a href="../html/nous.html">A Propos de Nous</a></li>
+          <li><a href="html/nous.html">A Propos de Nous</a></li>
         </ul>
     </li>
      <li class="nav__item">
@@ -41,8 +41,8 @@ const createFooter = () => {
 
         <div class="nav__ul">
             <h4 class="nav__title">Télécharger notre application</h4>
-            <span> <img src="../img/apple_store_app_link.svg" alt="download_link"> </span>
-            <span> <img src="../img/google_store_app_link.png" alt="download_link"></span>
+            <span> <img src="img/apple_store_app_link.svg" alt="download_link"> </span>
+            <span> <img src="img/google_store_app_link.png" alt="download_link"></span>
 
         </div>
 
