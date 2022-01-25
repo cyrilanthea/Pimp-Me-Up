@@ -1,6 +1,5 @@
 const createNav = () => {
   const nav = document.querySelector('.navbar');
-
   nav.innerHTML = `
   <div class="nav">
     <div class="navbar-brand">
@@ -8,13 +7,11 @@ const createNav = () => {
         <img src="../img/black_logo.png" class="brand-logo" alt="logo"/>
       </a>
     </div>
-
     <div class="navbar-title">
       <h1 class="brand-title">
         <a href="../html/index.html">Pimp Me Up</a>
       </h1>
     </div>
-
     <div class="nav-items">
       <div class="search-container">
         <form class="searchBox" action="">
@@ -22,6 +19,12 @@ const createNav = () => {
           <button class="searchBtn" type="submit"><i class="bx bx-search"></i></button>
         </form>
       </div>
+        <!--div class="search">
+          <input  type="text" class="searchInput" name="find" placeholder="search product">
+          <button type="submit" class="searchBtn">
+              <i class='bx bx-search'></i>
+          </button>
+        </div-->
    </div>
    <div class ="nav-menu-items"  style="width:100%">
     <div class ="nav-menu-items-center">
@@ -50,7 +53,6 @@ const createNav = () => {
                 <li class="dropdown-sub-menu4"> <a href="#">Bien-Être</a></li>
               </ul>
             </li>
-
             <li class="menu menu3">
              <a href="../html/Choix.html"> <!-- user page path modification-->
               <img src="../img/user.png" alt="user"></a>
@@ -69,5 +71,4 @@ const createNav = () => {
   </div>
 `;
 }
-
 createNav();
