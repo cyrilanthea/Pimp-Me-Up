@@ -59,7 +59,7 @@ const createServiceCategorie = () => {
               </div>
           </div>
           <div class="product-card">
-              <div class="product-image"> <span class="discount-tag">-20% promo</span> <img src="../img/Maquillage.jpg" class="product-thumb" alt=""> <button class="card-btn">Ajouter aux favoris <i class='bx bx-heart bx-tada'></i><button> </div>
+              <div class="product-image"> <span class="discount-tag">-20% promo</span> <img src="../img/maquillage.jpg" class="product-thumb" alt=""> <button class="card-btn">Ajouter aux favoris <i class='bx bx-heart bx-tada'></i><button> </div>
               <div class="product-info">
                   <h2 class="product-brand">Magasin</h2>
                   <p class="product-short-des">Lorem ipsum dolor sit amet..</p> <span class="price">20 €</span> <span class="actual-price">59,99 €</span>
@@ -73,7 +73,7 @@ const createServiceCategorie = () => {
               </div>
           </div>
           <div class="product-card">
-              <div class="product-image"> <span class="discount-tag">-20% promo</span> <img src="../img/Maquillage3.jpg" class="product-thumb" alt=""> <button class="card-btn">Ajouter aux favoris <i class='bx bx-heart bx-tada'></i><button> </div>
+              <div class="product-image"> <span class="discount-tag">-20% promo</span> <img src="../img/maquillage3.jpg" class="product-thumb" alt=""> <button class="card-btn">Ajouter aux favoris <i class='bx bx-heart bx-tada'></i><button> </div>
               <div class="product-info">
                   <h2 class="product-brand">Magasin</h2>
                   <p class="product-short-des">Lorem ipsum dolor sit amet..</p> <span class="price">20 €</span> <span class="actual-price">59,99 €</span>
